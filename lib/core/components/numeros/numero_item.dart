@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 import '../../utils/app_rotas.dart';
 import '../../models/modelo.dart';
@@ -38,7 +39,7 @@ class _NumeroItemState extends State<NumeroItem> {
     
     return InkWell(
       onTap: () => {
-      Navigator.of(context).pushReplacementNamed(
+      Modular.to.pushReplacementNamed(
       AppRoutes.PERGUNTAS,
       arguments: widget.modelo,
     ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../components/escolherPerguntas/escolher_pergunta_tema.dart';
-import '../components/escolherPerguntas/escolher_pergunta_numero.dart';
+import 'package:quiz_biblico/core/components/numeros/numeros_tema.dart';
+import 'package:quiz_biblico/core/components/numeros/numeros_grid.dart';
+
 
 class EscolherPergunta extends StatelessWidget {
 

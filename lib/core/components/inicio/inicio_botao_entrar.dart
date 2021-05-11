@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 import '../../models/modelo.dart';
 import '../../utils/app_rotas.dart';
@@ -8,17 +9,17 @@ class InicioBotaoEntrar extends StatelessWidget {
     Key key,
     @required this.isLandscape,
     @required this.constraints,
-    this.perguntas,
+    this.modelo,
   }) : super(key: key);
 
   final bool isLandscape;
   final BoxConstraints constraints;
-  final Perguntas perguntas;
+  final Perguntas modelo;
 
   void _selectEntrarApp(BuildContext context) {
-    Navigator.of(context).pushReplacementNamed(
+  Modular.to.pushReplacementNamed(
       AppRoutes.NUMERO_PERGUNTAS,
-      arguments: perguntas,
+      arguments: modelo,
     );
   }
 

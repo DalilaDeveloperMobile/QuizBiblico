@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../components/perguntasAlternativas/perguntas_alternativas_tema.dart';
-import '../components/perguntasAlternativas/perguntas_alternativas_questoes.dart';
-import '../components/perguntasAlternativas/perguntas_alternativas_a.dart';
-import '../components/perguntasAlternativas/perguntas_alternativas_b.dart';
-import '../components/perguntasAlternativas/perguntas_alternativas_c.dart';
-import '../components/perguntasAlternativas/perguntas_alternativas_texto.dart';
+import 'package:quiz_biblico/core/components/perguntas/perguntas_alternativas_tema.dart';
+import 'package:quiz_biblico/core/components/perguntas/perguntas_alternativas_questoes.dart';
+import 'package:quiz_biblico/core/components/perguntas/perguntas_alternativas_a.dart';
+import 'package:quiz_biblico/core/components/perguntas/perguntas_alternativas_b.dart';
+import 'package:quiz_biblico/core/components/perguntas/perguntas_alternativas_c.dart';
+import 'package:quiz_biblico/core/components/perguntas/perguntas_alternativas_texto.dart';
 
-import '../models/modelo.dart';
+import 'package:quiz_biblico/core/models/modelo.dart';
 
 class PerguntasRespostas extends StatelessWidget {
   @override

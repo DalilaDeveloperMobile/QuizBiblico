@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
-import '../utils/app_rotas.dart';
-import '../models/modelo.dart';
+import 'package:quiz_biblico/core/models/modelo.dart';
+import 'package:quiz_biblico/core/utils/app_rotas.dart';
 
-class RespostaAlternativaA extends StatelessWidget {
+class RespostaAlternativaB extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
@@ -37,7 +38,7 @@ class RespostaAlternativaA extends StatelessWidget {
                             ? constraints.maxHeight * 0.4
                             : constraints.maxHeight * 0.3,
                         child: Image.asset(
-                          modelo.alternativas1Imagem,
+                          modelo.alternativas2Imagem,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -51,7 +52,7 @@ class RespostaAlternativaA extends StatelessWidget {
                         ),
                         child: Center(
                           child: Text(
-                            modelo.resposta1,
+                            modelo.resposta2,
                             style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'FredokaOne',
@@ -78,7 +79,7 @@ class RespostaAlternativaA extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () => {
-                      Navigator.of(context).pushReplacementNamed(
+                     Modular.to.pushReplacementNamed(
                         AppRoutes.NUMERO_PERGUNTAS,
                         arguments: modelo,
                       ),

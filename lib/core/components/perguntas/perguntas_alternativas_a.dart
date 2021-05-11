@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 import '../../utils/app_rotas.dart';
 import '../../models/modelo.dart';
 
-class PerguntasAlternativasB extends StatelessWidget {
-  const PerguntasAlternativasB({
+class PerguntasAlternativaA extends StatelessWidget {
+  const PerguntasAlternativaA({
     Key key,
     @required this.modelo,
     @required this.isLandscape,
@@ -19,8 +20,8 @@ class PerguntasAlternativasB extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => {
-        Navigator.of(context).pushReplacementNamed(
-          AppRoutes.ALTERNATIVA2,
+        Modular.to.pushReplacementNamed(
+          AppRoutes.ALTERNATIVA1,
           arguments: modelo,
         ),
       },
@@ -57,7 +58,7 @@ class PerguntasAlternativasB extends StatelessWidget {
             ),
           ),
           child: Text(
-            modelo.alternativas2,
+            modelo.alternativas1,
             style: TextStyle(
               color: Colors.white,
               fontFamily: 'FredokaOne',

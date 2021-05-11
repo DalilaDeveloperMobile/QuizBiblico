@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
-import '../utils/app_rotas.dart';
-import '../models/modelo.dart';
+import 'package:quiz_biblico/core/models/modelo.dart';
+import 'package:quiz_biblico/core/utils/app_rotas.dart';
 
 class RespostaAlternativaC extends StatelessWidget {
   @override
@@ -78,7 +79,7 @@ class RespostaAlternativaC extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () => {
-                      Navigator.of(context).pushReplacementNamed(
+                     Modular.to.pushReplacementNamed(
                         AppRoutes.NUMERO_PERGUNTAS,
                         arguments: modelo,
                       ),

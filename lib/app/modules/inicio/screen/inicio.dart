@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../components/inicioSobre/inicio_tema.dart';
-import '../components/inicioSobre/inicio_sobre_imagem.dart';
-import '../components/inicioSobre/inicio_sobre_texto.dart';
-import '../components/inicioSobre/inicio_botao_entrar.dart';
+import 'package:quiz_biblico/core/components/inicio/inicio_tema.dart';
+import 'package:quiz_biblico/core/components/inicio/inicio_sobre_imagem.dart';
+import 'package:quiz_biblico/core/components/inicio/inicio_sobre_texto.dart';
+import 'package:quiz_biblico/core/components/inicio/inicio_botao_entrar.dart';
 
 class Inicio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+   
     final mediaQuery = MediaQuery.of(context);
     bool isLandscape = mediaQuery.orientation == Orientation.landscape;
     return Scaffold(

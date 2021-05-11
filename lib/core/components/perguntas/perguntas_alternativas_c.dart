@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 import '../../utils/app_rotas.dart';
 import '../../models/modelo.dart';
@@ -19,7 +20,7 @@ class PerguntasAlternativasC extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
        onTap: () => {
-        Navigator.of(context).pushReplacementNamed(
+        Modular.to.pushReplacementNamed(
           AppRoutes.ALTERNATIVA3,
           arguments: modelo,
         ),
