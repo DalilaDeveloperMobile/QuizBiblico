@@ -4,7 +4,6 @@ import 'package:flutter_modular/flutter_modular.dart';
 import '../../utils/app_rotas.dart';
 import '../../models/modelo.dart';
 
-
 // enum Marcado { OffMarcado, OnMarcado }
 
 class NumeroItem extends StatefulWidget {

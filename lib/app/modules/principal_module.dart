@@ -20,13 +20,13 @@ class PrincipalModule extends Module {
   @override
   final List<ModularRoute> routes = [
     ChildRoute(Modular.initialRoute, child: (context, args) => Inicio()),
-    ChildRoute('/numeros', child: (context, args) => EscolherPergunta()),
-    ChildRoute('/perguntas', child: (context, args) => PerguntasRespostas()),
-    ChildRoute('/respostaAlternativaA',
+    ChildRoute("/numeros", child: (context, args) => EscolherPergunta()),
+    ChildRoute("/perguntas", child: (context, args) => PerguntasRespostas()),
+    ChildRoute("/respostaAlternativaA",
         child: (context, args) => RespostaAlternativaA()),
-    ChildRoute('/respostaAlternativaB',
+    ChildRoute("/respostaAlternativaB",
         child: (context, args) => RespostaAlternativaB()),
-    ChildRoute('/respostaAlternativaC',
+    ChildRoute("/respostaAlternativaC",
         child:  (context, args) => RespostaAlternativaC()),
   ];
 }
